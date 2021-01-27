@@ -23,7 +23,7 @@ class App extends Component {
   componentDidMount() {
   axios.get('https://practiceapi.devmountain.com/api/posts').then(res => {
   this.setState({
-    post: res.data
+    posts: res.data
   })
 })
   }
